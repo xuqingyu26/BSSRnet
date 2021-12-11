@@ -57,13 +57,13 @@ def test(test_loader, cfg):
 
             psnr_list.append(cal_psnr(HR_left[:,:,:,:].cpu(), SR_left[:,:,:,:].cpu()))  # 计算左图的PSNR
 
-            if not os.path.exists('./results_imgres_img/' + cfg.dataset):
-                os.makedirs('./results_imgres_img/' + cfg.dataset)
+            if not os.path.exists('./results/' + cfg.dataset):
+                os.makedirs('./results/' + cfg.dataset)
             #
             SR_left_img = transforms.ToPILImage()(torch.squeeze(SR_left.data.cpu(), 0))
-            SR_left_img.save('./results_imgres_img/' + cfg.dataset + '/' + video_name + '_L.png')
+            SR_left_img.save('./results/' + cfg.dataset + '/' + video_name + '_L.png')
             SR_right_img = transforms.ToPILImage()(torch.squeeze(SR_right.data.cpu(), 0))
-            SR_right_img.save('./results_imgres_img/' + cfg.dataset + '/' + video_name + '_R.png')
+            SR_right_img.save('./results/' + cfg.dataset + '/' + video_name + '_R.png')
 
         ## print results
         # print(float(np.array(psnr_list).mean()))
