@@ -18,7 +18,7 @@ def parse_args():
     parser.add_argument('--n_epochs', type=int, default=85, help='number of epochs to train')
     parser.add_argument('--n_steps', type=int, default=30, help='number of epochs to update learning rate')
     ###数据集路径
-    parser.add_argument('--trainset_dir', type=str, default='/media/root/f/Qingyu/bsdataset/Flickr1024_patches32')
+    parser.add_argument('--trainset_dir', type=str, default='./data/train')
     parser.add_argument('--model_name', type=str, default='BSSR')
     parser.add_argument('--load_pretrain', type=bool, default=False)
     parser.add_argument('--start_epoch', type=int, default=1)
