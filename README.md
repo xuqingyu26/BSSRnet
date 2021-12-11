@@ -3,4 +3,4 @@
 <br><br>
 ## *Highlights:*
 #### 1. *We develop a Dynamic network conduct space-variable filter on stereo images.*
- <p align="center"> <img src="https://github.com/xuqingyu26/BSSRnet/blob/main/Figs/Overview.pdf" width="100%"></p>
+ <p align="center"> <img src="https://github.com/xuqingyu26/BSSRnet/blob/main/Figs/Overview.png" width="100%"></p>
