@@ -11,7 +11,7 @@ import torchvision.transforms as transforms
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--testset_dir', type=str, default='/media/root/f/Qingyu/test')
+    parser.add_argument('--testset_dir', type=str, default='./data/test')
     parser.add_argument('--dataset', type=str, default='Flickr1024')
     parser.add_argument('--scale_factor', type=int, default=4)
     parser.add_argument('--device', type=str, default='cuda:0')
