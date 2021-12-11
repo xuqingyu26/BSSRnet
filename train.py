@@ -154,7 +154,7 @@ def train(train_loader, cfg):
             },save_path = 'log/',filename=cfg.model_name + '_x' +str(cfg.scale_factor) +
                                       '_epoch' +str(idx_epoch + 1) + '.pth.tar')
             if idx_epoch % 2 == 0:
-                torch.save(net.state_dict(), 'log_3layer_1/' + 'BSSRnet_model3_x4' + '.pth')
+                torch.save(net.state_dict(), 'log/' + 'BSSRnet_x4' + '.pth')
             psnr_epoch = []
             loss_epoch = []
 
